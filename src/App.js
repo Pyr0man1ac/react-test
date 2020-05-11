@@ -18,6 +18,14 @@ function App() {
         >
           Learn React
         </a>
+        <a
+          className="App-link"
+          href="https://react.docschina.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React In Chinese
+        </a>
       </header>
     </div>
   );
