@@ -107,13 +107,15 @@ class Game extends React.Component {
       status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O')
     }
 
+    
     const moves = history.map((el, index) => {
       const desc = index ? 
       `Go to move #${index} (${el.row}, ${el.column})` : 
       'Go to game start'
+      const buttonClassName = el === current ? 'bold' : ''
       return (
         <li key={index}>
-          <button onClick={() => this.jumpTo(index)}>{desc}</button>
+          <button onClick={() => this.jumpTo(index)} className={buttonClassName}>{desc}</button>
         </li>
       )
     })
